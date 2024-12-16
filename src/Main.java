@@ -52,16 +52,16 @@ public class Main {
             System.out.println("\nManche " + manches);
             System.out.println("Joueur " + numJoueur + " à toi de jouer. " + symbole + "\n");
             afficherTableau(morpionArray);
-            System.out.println("\nCoordonée X:");
+            System.out.println("\nCoordonnée X:");
             byte coX = scanner.nextByte();
-            System.out.println("Coordonée Y:");
+            System.out.println("Coordonnée Y:");
             byte coY = scanner.nextByte();
 
             while (morpionArray[coX-1][coY-1].equalsIgnoreCase("o") || morpionArray[coX-1][coY-1].equalsIgnoreCase("x")) {
                 System.out.println("Emplacement déjà occupé !");
-                System.out.println("\nCoordonée X:");
+                System.out.println("\nCoordonnée X:");
                 coX = scanner.nextByte();
-                System.out.println("Coordonée Y:");
+                System.out.println("Coordonnée Y:");
                 coY = scanner.nextByte();
             }
             morpionArray[coX-1][coY-1] = symbole;
